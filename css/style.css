@@ -33,7 +33,7 @@ h3 {
   margin-bottom: .5rem; }
   @media (max-width: 900px) {
     .heading {
-      font-size: 2.3rem; } }
+      font-size: 2.4rem; } }
 
 .accent {
   display: inline-block;
@@ -146,6 +146,9 @@ section {
     left: 7rem; }
   .section-testimonials__feature--quote {
     padding: 0 7rem; }
+    @media (max-width: 600px) {
+      .section-testimonials__feature--quote {
+        padding: 0 4rem; } }
   @media (min-width: 1200px) {
     .section-testimonials__feature--team {
       padding: 0 17rem; } }
