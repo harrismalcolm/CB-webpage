@@ -71,20 +71,28 @@ h3 {
 .header {
 
   &__logo-box {
+    width: 20rem;
+    @media (max-width: 600px) {
+      margin: 2rem auto;
+    }
     margin: 3rem 0 3rem 3rem;
   }
 
   &__logo {
+    @media (max-width: 600px) {
+      height: 2.3rem;
+    }
     height: 3rem;
   }
 
   &__banner {
-    height: 74vh;
+    height: 66vh;
     background-image: url('../img/banner-image-large.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 3rem;
     @media (min-width: 600px) {
+      height: 74vh;
       background-image: linear-gradient(285deg, 
       rgba($color-banner, .9) 0%,
       rgba($color-banner, .9) 45%,
@@ -218,11 +226,11 @@ section {
   &__feature {
 
     .quotation-mark {
-      left: 3rem;
+      left: 7rem;
     }
 
     &--quote {
-      padding: 0 5rem;
+      padding: 0 7rem;
     }
 
     &--team {
@@ -243,10 +251,10 @@ section {
   }
 
   &__disclamier {
-    font-size: 1.1rem;
+    font-size: 1.35rem;
     line-height: 1.2;
     color: #666;
-    padding: 0 5px;
+    margin-right: -3px;
 
     &--link {
       &:focus,
@@ -344,7 +352,7 @@ section {
       }
   
       &:last-child {
-        border-left: 2px solid $color-default;
+        border-left: 2px solid #c0c0c0;
         padding-left: 5rem;
       }
     }

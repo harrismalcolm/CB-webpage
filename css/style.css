@@ -42,19 +42,27 @@ h3 {
   margin-bottom: 2rem; }
 
 .header__logo-box {
+  width: 20rem;
   margin: 3rem 0 3rem 3rem; }
+  @media (max-width: 600px) {
+    .header__logo-box {
+      margin: 2rem auto; } }
 
 .header__logo {
   height: 3rem; }
+  @media (max-width: 600px) {
+    .header__logo {
+      height: 2.3rem; } }
 
 .header__banner {
-  height: 74vh;
+  height: 66vh;
   background-image: url("../img/banner-image-large.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 3rem; }
   @media (min-width: 600px) {
     .header__banner {
+      height: 74vh;
       background-image: linear-gradient(285deg, rgba(29, 101, 85, 0.9) 0%, rgba(29, 101, 85, 0.9) 45%, transparent 45.05%), url("../img/banner-image-large.jpg");
       background-position: center; } }
 
@@ -135,9 +143,9 @@ section {
       left: 0;
       opacity: .25; }
   .section-testimonials__feature .quotation-mark {
-    left: 3rem; }
+    left: 7rem; }
   .section-testimonials__feature--quote {
-    padding: 0 5rem; }
+    padding: 0 7rem; }
   @media (min-width: 1200px) {
     .section-testimonials__feature--team {
       padding: 0 17rem; } }
@@ -147,10 +155,10 @@ section {
   .footer__social-links {
     margin: 4rem 0 2rem; }
   .footer__disclamier {
-    font-size: 1.1rem;
+    font-size: 1.35rem;
     line-height: 1.2;
     color: #666;
-    padding: 0 5px; }
+    margin-right: -3px; }
     .footer__disclamier--link:focus, .footer__disclamier--link:visited {
       color: inherit; }
   .footer__nav {
@@ -213,7 +221,7 @@ section {
       .col__col-1-of-2:not(:last-child) {
         margin-right: 1rem; }
       .col__col-1-of-2:last-child {
-        border-left: 2px solid #888;
+        border-left: 2px solid #c0c0c0;
         padding-left: 5rem; } }
   .col__col-1-of-4 {
     margin-bottom: 4; }
